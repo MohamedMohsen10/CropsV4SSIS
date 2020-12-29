@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ALM_Azure_Integration_201220", "ALM_Azure_Integration_201220\ALM_Azure_Integration_201220.dtproj", "{300B25F9-243E-4A8A-81D3-34F377D4929D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{300B25F9-243E-4A8A-81D3-34F377D4929D}.Development|Default.ActiveCfg = Development
+		{300B25F9-243E-4A8A-81D3-34F377D4929D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {646BE39F-4283-4EC1-A095-2B10DA093134}
+	EndGlobalSection
+EndGlobal
