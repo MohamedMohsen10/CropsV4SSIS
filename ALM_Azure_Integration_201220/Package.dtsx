@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="137"
-  DTS:VersionGUID="{958FE6FC-0C6A-4DE8-9626-9929BC25FD69}">
+  DTS:VersionBuild="151"
+  DTS:VersionGUID="{AD9930F4-20B5-42A9-B677-4B6C1C45DCD4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -268,7 +268,7 @@
           AuthType="BasicAuthentication">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbVzWaamF7ki8sSlQM2N5aAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA5YqsVkaF2lYC/KjQ3XO/BAAAAAASAAACgAAAAEAAAABjY/u3M48+TuW4S4V/TS4ggAAAAV6/F3jDIyyBEaxQXcyCBBCvVBAaKPtn65CV84tNdcm0UAAAAe8CEMlvAlc6N6eKWy99aS4R8KN8</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPDK4sHz4/UGCugky9wxllgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACmQQ/e/SeZ7hh5izc5L5MYAAAAAASAAACgAAAAEAAAANC6pCDZQxGf4E/zRA4lGb0gAAAA6+Jb8wUXB01jaFTHAbbPVy6AAr8RF2/CpHj183EpmTMUAAAAnPutOK2NiPvFk4eo+yhr+iW+QcI</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -10885,191 +10885,77 @@ WHERE SourceId = ?</property>
                   name="ADO NET Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Id]"
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of Id]"
                       cachedDataType="i8"
-                      cachedName="Id"
+                      cachedName="Copy of Id"
                       externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SourceId]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Id]" />
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AreaId]"
-                      cachedDataType="i8"
-                      cachedName="AreaId"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AreaId]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AreaId]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AreaLevel1]"
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of IterationPath]"
                       cachedDataType="nText"
-                      cachedName="AreaLevel1"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AreaLevel1]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AreaLevel1]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AreaLevel2]"
-                      cachedDataType="nText"
-                      cachedName="AreaLevel2"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AreaLevel2]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AreaLevel2]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AreaLevel3]"
-                      cachedDataType="nText"
-                      cachedName="AreaLevel3"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AreaLevel3]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AreaLevel3]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AreaPath]"
-                      cachedDataType="nText"
-                      cachedName="AreaPath"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AreaPath]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AreaPath]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AuthorizedDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="AuthorizedDate"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AuthorizedDate]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AuthorizedDate]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ChangedById]"
-                      cachedDataType="nText"
-                      cachedName="ChangedById"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChangedById]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[ChangedById]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ChangedDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="ChangedDate"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChangedDate]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[ChangedDate]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[CommentCount]"
-                      cachedDataType="i8"
-                      cachedName="CommentCount"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[CommentCount]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[CommentCount]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[CreatedById]"
-                      cachedDataType="nText"
-                      cachedName="CreatedById"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[CreatedById]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[CreatedById]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Description]"
-                      cachedDataType="nText"
-                      cachedName="Description"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Description]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Description]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[History]"
-                      cachedDataType="nText"
-                      cachedName="History"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[History]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[History]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[IterationId]"
-                      cachedDataType="i8"
-                      cachedName="IterationId"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IterationId]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationId]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[IterationLevel1]"
-                      cachedDataType="nText"
-                      cachedName="IterationLevel1"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IterationLevel1]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationLevel1]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[IterationLevel2]"
-                      cachedDataType="nText"
-                      cachedName="IterationLevel2"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IterationLevel2]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationLevel2]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[IterationLevel3]"
-                      cachedDataType="nText"
-                      cachedName="IterationLevel3"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IterationLevel3]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationLevel3]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[IterationPath]"
-                      cachedDataType="nText"
-                      cachedName="IterationPath"
+                      cachedName="Copy of IterationPath"
                       externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IterationPath]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationPath]" />
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of IterationPath]" />
                     <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[NodeName]"
-                      cachedDataType="nText"
-                      cachedName="NodeName"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NodeName]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[NodeName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PersonId]"
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of IterationId]"
                       cachedDataType="i8"
-                      cachedName="PersonId"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PersonId]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[PersonId]" />
+                      cachedName="Copy of IterationId"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IterationId]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of IterationId]" />
                     <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Reason]"
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of Title]"
                       cachedDataType="nText"
-                      cachedName="Reason"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Reason]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Reason]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Rev]"
-                      cachedDataType="i8"
-                      cachedName="Rev"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Rev]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Rev]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[State]"
-                      cachedDataType="nText"
-                      cachedName="State"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[State]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[State]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Tags]"
-                      cachedDataType="nText"
-                      cachedName="Tags"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Tags]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Tags]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[TeamProject]"
-                      cachedDataType="nText"
-                      cachedName="TeamProject"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TeamProject]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[TeamProject]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Title]"
-                      cachedDataType="nText"
-                      cachedName="Title"
+                      cachedName="Copy of Title"
                       externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Title]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Title]" />
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Title]" />
                     <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Watermark]"
-                      cachedDataType="i8"
-                      cachedName="Watermark"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Watermark]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Watermark]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AssignedToDisplayName]"
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of State]"
                       cachedDataType="nText"
-                      cachedName="AssignedToDisplayName"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AssignedTo]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AssignedToDisplayName]" />
+                      cachedName="Copy of State"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[State]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]" />
                     <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AssignedToId]"
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of WorkItemType]"
                       cachedDataType="nText"
-                      cachedName="AssignedToId"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AssigneeSourceId]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AssignedToId]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WorkItemType]"
-                      cachedDataType="nText"
-                      cachedName="WorkItemType"
+                      cachedName="Copy of WorkItemType"
                       externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Type]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[WorkItemType]" />
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of WorkItemType]" />
                     <inputColumn
-                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[CreatedDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="CreatedDate"
-                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SourceCreatedDate]"
-                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[CreatedDate]" />
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of MicrosoftVSTSCommonPriority]"
+                      cachedDataType="i8"
+                      cachedName="Copy of MicrosoftVSTSCommonPriority"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Priority]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MicrosoftVSTSCommonPriority]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of MicrosoftVSTSCommonSeverity]"
+                      cachedDataType="nText"
+                      cachedName="Copy of MicrosoftVSTSCommonSeverity"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Severity]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MicrosoftVSTSCommonSeverity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[CommonActivity]"
+                      cachedDataType="nText"
+                      cachedName="CommonActivity"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Activity]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[CommonActivity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of AssignedToDisplayName]"
+                      cachedDataType="nText"
+                      cachedName="Copy of AssignedToDisplayName"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AssignedTo]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of AssignedToDisplayName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of Tags]"
+                      cachedDataType="nText"
+                      cachedName="Copy of Tags"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Tags]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Tags]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Copy of TeamProject]"
+                      cachedDataType="nText"
+                      cachedName="Copy of TeamProject"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TeamProject]"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TeamProject]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -11715,6 +11601,381 @@ WHERE SourceId = ?</property>
                       refId="Package\Data Flow Task Mongo\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task Mongo\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task Mongo\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[AssignedToDisplayName]"
+                      cachedDataType="nText"
+                      cachedName="AssignedToDisplayName"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AssignedToDisplayName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[AssignedToId]"
+                      cachedDataType="nText"
+                      cachedName="AssignedToId"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AssignedToId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[Id]"
+                      cachedDataType="i8"
+                      cachedName="Id"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[IterationId]"
+                      cachedDataType="i8"
+                      cachedName="IterationId"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[IterationPath]"
+                      cachedDataType="nText"
+                      cachedName="IterationPath"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationPath]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[State]"
+                      cachedDataType="nText"
+                      cachedName="State"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[State]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[Title]"
+                      cachedDataType="nText"
+                      cachedName="Title"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Title]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[WorkItemType]"
+                      cachedDataType="nText"
+                      cachedName="WorkItemType"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[WorkItemType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[MicrosoftVSTSCommonActivity]"
+                      cachedDataType="nText"
+                      cachedName="MicrosoftVSTSCommonActivity"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[MicrosoftVSTSCommonActivity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[MicrosoftVSTSCommonPriority]"
+                      cachedDataType="i8"
+                      cachedName="MicrosoftVSTSCommonPriority"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[MicrosoftVSTSCommonPriority]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[MicrosoftVSTSCommonSeverity]"
+                      cachedDataType="nText"
+                      cachedName="MicrosoftVSTSCommonSeverity"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[MicrosoftVSTSCommonSeverity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[TeamProject]"
+                      cachedDataType="nText"
+                      cachedName="TeamProject"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[TeamProject]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input].Columns[Tags]"
+                      cachedDataType="nText"
+                      cachedName="Tags"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Tags]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of AssignedToDisplayName]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of AssignedToDisplayName]"
+                      name="Copy of AssignedToDisplayName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AssignedToDisplayName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of AssignedToId]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of AssignedToId]"
+                      name="Copy of AssignedToId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[AssignedToId]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Id]"
+                      name="Copy of Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of IterationId]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of IterationId]"
+                      name="Copy of IterationId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationId]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of IterationPath]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of IterationPath]"
+                      name="Copy of IterationPath"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[IterationPath]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of State]"
+                      name="Copy of State"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[State]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Title]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Title]"
+                      name="Copy of Title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Title]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of WorkItemType]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of WorkItemType]"
+                      name="Copy of WorkItemType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[WorkItemType]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[CommonActivity]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[CommonActivity]"
+                      name="CommonActivity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[MicrosoftVSTSCommonActivity]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MicrosoftVSTSCommonPriority]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MicrosoftVSTSCommonPriority]"
+                      name="Copy of MicrosoftVSTSCommonPriority"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[MicrosoftVSTSCommonPriority]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MicrosoftVSTSCommonSeverity]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MicrosoftVSTSCommonSeverity]"
+                      name="Copy of MicrosoftVSTSCommonSeverity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[MicrosoftVSTSCommonSeverity]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TeamProject]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TeamProject]"
+                      name="Copy of TeamProject"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[TeamProject]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Tags]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Tags]"
+                      name="Copy of Tags"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[Tags]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -13418,8 +13679,13 @@ WHERE SourceId = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task Mongo.Paths[ODBC Source Output]"
+              refId="Package\Data Flow Task Mongo.Paths[Data Conversion Output]"
               endId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task Mongo\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task Mongo.Paths[ODBC Source Output]"
+              endId="Package\Data Flow Task Mongo\Data Conversion.Inputs[Data Conversion Input]"
               name="ODBC Source Output"
               startId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output]" />
           </paths>
@@ -15302,7 +15568,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       DTS:refId="Package\Execute Process Task"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
-      DTS:Disabled="True"
       DTS:DTSID="{7E219CC8-5558-4EF7-A0F6-4C18D80F2DD5}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -15466,7 +15731,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15488,7 +15755,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15838,49 +16107,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     design-time-name="Package\Data Flow Task Mongo">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="178.4,41.6"
           Id="Package\Data Flow Task Mongo\ADO NET Destination"
-          TopLeft="186.285717458141,157.835296331227" />
+          TopLeft="187.428574620461,186.860133339597" />
         <NodeLayout
           Size="141.6,41.6"
           Id="Package\Data Flow Task Mongo\ODBC Source"
-          TopLeft="49.142857979755,73.4117657354547" />
+          TopLeft="204.952384442699,35.2104580101533" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Data Flow Task Mongo\Data Conversion"
+          TopLeft="201.968257407753,108.475818166986" />
         <EdgeLayout
           Id="Package\Data Flow Task Mongo.Paths[ODBC Source Output]"
-          TopLeft="119.942857979755,115.011765735455">
+          TopLeft="277.660320925226,76.8104580101533">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="155.542859478386,42.8235305957723"
+              EndConnector="0,31.6653601568325"
               Start="0,0"
-              End="155.542859478386,35.3235305957723">
+              End="0,24.1653601568325">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.4117652978861" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.4117652978861"
-                    Point2="0,21.4117652978861"
-                    Point3="4,21.4117652978861" />
-                  <mssgle:LineSegment
-                    End="151.542859478386,21.4117652978861" />
-                  <mssgle:CubicBezierSegment
-                    Point1="151.542859478386,21.4117652978861"
-                    Point2="155.542859478386,21.4117652978861"
-                    Point3="155.542859478386,25.4117652978861" />
-                  <mssgle:LineSegment
-                    End="155.542859478386,35.3235305957723" />
+                    End="0,24.1653601568325" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-25.05849609375,6.47086367216627,50.1169921875,11.2236328125"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task Mongo.Paths[Data Conversion Output]"
+          TopLeft="278.098416014107,150.075818166986">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.7843151726108"
+              Start="0,0"
+              End="0,29.2843151726108">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.2843151726108" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-25.05849609375,9.03034118005539,50.1169921875,11.2236328125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="ck"
+          ParentId="Package\Data Flow Task Mongo"
+          FontInfo="{assembly:Null}"
+          Size="40,60"
+          Id="0121cd3d-9926-44f0-b2e4-e2db72666e63"
+          TopLeft="1203.17462366454,341.594775646112" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -15909,7 +16203,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     design-time-name="Package\Data Flow Task Script">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Data Flow Task Script\Script Component"
@@ -15949,7 +16243,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
