@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="196"
-  DTS:VersionGUID="{A2BA9A49-6FF1-4E88-A80A-EBA889216C1C}">
+  DTS:VersionBuild="197"
+  DTS:VersionGUID="{874700DF-6D70-49DC-8279-E2303E561750}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1207,7 +1207,7 @@
           AuthType="BasicAuthentication">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPDK4sHz4/UGCugky9wxllgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAyA4hJsAw1mE7kG4Bi2gIrAAAAAASAAACgAAAAEAAAACqfi91HRqqdvZuxxrFZhPUgAAAAjaT0iGUh/nTJgrREbMMOsBHh+MDWBqBsH3KyL8/MCsoUAAAAjGNebu4133j7B52J0UUXmm0t5bE</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPDK4sHz4/UGCugky9wxllgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACFiUYEuomg4rCLxCAguIa1AAAAAASAAACgAAAAEAAAAMk6J/CuazfJxtjcM5+MVcogAAAAIgD3H0ojypqeEHBgEUFMPL8nxOlEMW6e+gM7IaKmDLYUAAAAlnIQM9ljh1+uhEDlFawR/UwwyrQ</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -7300,6 +7300,402 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[CommentCount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CommentCount]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[CommentCount]"
+                      name="CommentCount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[CreatedBy]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CreatedBy]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[CreatedBy]"
+                      name="CreatedBy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[ChangedBy]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ChangedBy]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[ChangedBy]"
+                      name="ChangedBy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[LinkType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LinkType]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[LinkType]"
+                      name="LinkType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[Effort]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Effort]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[Effort]"
+                      name="Effort"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[StoryPoints]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StoryPoints]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[StoryPoints]"
+                      name="StoryPoints"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[RemainingWork]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RemainingWork]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[RemainingWork]"
+                      name="RemainingWork"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[CompletedWork]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CompletedWork]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[CompletedWork]"
+                      name="CompletedWork"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[OriginalEstimate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[OriginalEstimate]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[OriginalEstimate]"
+                      name="OriginalEstimate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[Severity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Severity]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[Severity]"
+                      name="Severity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[Priority]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Priority]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[Priority]"
+                      name="Priority"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[WorkItemType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WorkItemType]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[WorkItemType]"
+                      name="WorkItemType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[TeamProject]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TeamProject]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[TeamProject]"
+                      name="TeamProject"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[IterationPath]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IterationPath]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[IterationPath]"
+                      name="IterationPath"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[baddata]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baddata]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[baddata]"
+                      name="baddata"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[ValueArea]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ValueArea]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[ValueArea]"
+                      name="ValueArea"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[IterationId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IterationId]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[IterationId]"
+                      name="IterationId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[AssignedTo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AssignedTo]"
+                      length="50"
+                      lineageId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].Columns[AssignedTo]"
+                      name="AssignedTo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -7321,6 +7717,114 @@
                       dataType="str"
                       length="50"
                       name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CommentCount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CommentCount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CreatedBy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CreatedBy" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ChangedBy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ChangedBy" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LinkType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LinkType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Effort]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Effort" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StoryPoints]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StoryPoints" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RemainingWork]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="RemainingWork" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CompletedWork]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CompletedWork" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[OriginalEstimate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginalEstimate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Severity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Severity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Priority]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Priority" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WorkItemType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WorkItemType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TeamProject]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TeamProject" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IterationPath]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IterationPath" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[baddata]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="baddata" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ValueArea]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ValueArea" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IterationId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IterationId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task Merge\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AssignedTo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AssignedTo" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -17878,7 +18382,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       DTS:refId="Package\Execute Process Task"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
-      DTS:Disabled="True"
       DTS:DTSID="{7E219CC8-5558-4EF7-A0F6-4C18D80F2DD5}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -17979,18 +18482,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           TopLeft="215.428575097298,97.8823543139396" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="305.950003610338,139.48235431394">
+          TopLeft="305.950003610339,139.48235431394">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,25.6882361606743"
+              EndConnector="0,25.6882361606744"
               Start="0,0"
-              End="0,18.1882361606743">
+              End="0,18.1882361606744">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.1882361606743" />
+                    End="0,18.1882361606744" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18042,9 +18545,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18066,9 +18567,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18174,9 +18673,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18198,9 +18695,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18222,9 +18717,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18270,9 +18763,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18318,9 +18809,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18329,22 +18818,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.2067234857686"
+              EndConnector="0,45.206723485768"
               Start="0,0"
-              End="0,37.7067234857686">
+              End="0,37.706723485768">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.7067234857686" />
+                    End="0,37.706723485768" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18377,22 +18864,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.4294141563162"
+              EndConnector="0,60.4294141563164"
               Start="0,0"
-              End="0,52.9294141563162">
+              End="0,52.9294141563164">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.9294141563162" />
+                    End="0,52.9294141563164" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18424,9 +18909,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Data Flow Task Mongo\ODBC Source"
           TopLeft="204.952384442699,35.2104580101533" />
         <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Data Flow Task Mongo\Data Conversion 1"
+          TopLeft="475.714293815652,177.411767194015" />
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Data Flow Task Mongo\ADO NET Destination 1"
+          TopLeft="468.571436551153,263.058827218712" />
+        <NodeLayout
           Size="155.2,41.6"
           Id="Package\Data Flow Task Mongo\Data Conversion"
           TopLeft="201.968257407753,108.475818166986" />
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Data Flow Task Mongo\ADO NET Destination"
+          TopLeft="196.285717424081,179.705884873248" />
         <EdgeLayout
           Id="Package\Data Flow Task Mongo.Paths[ODBC Source Output]"
           TopLeft="277.660320925226,76.8104580101533">
@@ -18449,31 +18946,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <AnnotationLayout
-          Text="ck"
-          ParentId="Package\Data Flow Task Mongo"
-          FontInfo="{assembly:Null}"
-          Size="40,40"
-          Id="0121cd3d-9926-44f0-b2e4-e2db72666e63"
-          TopLeft="1203.17462366454,341.594775646112" />
-        <NodeLayout
-          Size="178.4,41.6"
-          Id="Package\Data Flow Task Mongo\ADO NET Destination"
-          TopLeft="196.285717424081,179.705884873248" />
         <EdgeLayout
-          Id="Package\Data Flow Task Mongo.Paths[Data Conversion Output]"
-          TopLeft="282.526987415917,150.075818166986">
+          Id="Package\Data Flow Task Mongo.Paths[Data Conversion Output1]"
+          TopLeft="557.942865183403,219.011767194015">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,29.6300667062623"
+              EndConnector="0,44.047060024697"
               Start="0,0"
-              End="0,22.1300667062623">
+              End="0,36.547060024697">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.1300667062623" />
+                    End="0,36.547060024697" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18482,10 +18968,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Data Flow Task Mongo\Data Conversion 1"
-          TopLeft="475.714293815652,177.411767194015" />
+        <EdgeLayout
+          Id="Package\Data Flow Task Mongo.Paths[Data Conversion Output]"
+          TopLeft="282.526987415917,150.075818166986">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.630066706262"
+              Start="0,0"
+              End="0,22.130066706262">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.130066706262" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task Mongo.Paths[ADO NET Destination Error Output]"
           TopLeft="374.685717424081,199.358826033632">
@@ -18494,12 +18998,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               StartConnector="{assembly:Null}"
               EndConnector="101.028576391571,0"
               Start="0,0"
-              End="93.5285763915708,0">
+              End="93.5285763915709,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="93.5285763915708,0" />
+                    End="93.5285763915709,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18510,35 +19014,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="178.4,41.6"
-          Id="Package\Data Flow Task Mongo\ADO NET Destination 1"
-          TopLeft="468.571436551153,263.058827218712" />
-        <EdgeLayout
-          Id="Package\Data Flow Task Mongo.Paths[Data Conversion Output1]"
-          TopLeft="557.942865183403,219.011767194015">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44.0470600246971"
-              Start="0,0"
-              End="0,36.5470600246971">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.5470600246971" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <AnnotationLayout
+          Text="ck"
+          ParentId="Package\Data Flow Task Mongo"
+          FontInfo="{assembly:Null}"
+          Size="40,40"
+          Id="0121cd3d-9926-44f0-b2e4-e2db72666e63"
+          TopLeft="1203.17462366454,341.594775646112" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task Mongo\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task Mongo\ODBC Source">
     <Properties>
@@ -18552,11 +19045,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task Mongo\ADO NET Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Data Flow Task Script">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Data Flow Task Script\Script Component"
@@ -18596,9 +19097,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18606,22 +19105,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task Script\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task Mongo\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task Mongo\ADO NET Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
