@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="197"
-  DTS:VersionGUID="{874700DF-6D70-49DC-8279-E2303E561750}">
+  DTS:VersionBuild="198"
+  DTS:VersionGUID="{8F6383D2-3E46-4F89-BE19-BEC6175CAEF6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1207,7 +1207,7 @@
           AuthType="BasicAuthentication">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPDK4sHz4/UGCugky9wxllgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACFiUYEuomg4rCLxCAguIa1AAAAAASAAACgAAAAEAAAAMk6J/CuazfJxtjcM5+MVcogAAAAIgD3H0ojypqeEHBgEUFMPL8nxOlEMW6e+gM7IaKmDLYUAAAAlnIQM9ljh1+uhEDlFawR/UwwyrQ</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPDK4sHz4/UGCugky9wxllgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABWcOBUtwFCX+1iGbQtZ82/AAAAAASAAACgAAAAEAAAAOapxIp3Hf3fx22aTaB7wo8gAAAAqgMyfSoE/HZawgrpefUh0C+h97M1Gnqt/qiHFgP8Zi0UAAAACQ2oJm9kAq9ujSvcCFLJe1Z2lLc</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -12647,6 +12647,12 @@ WHERE SourceId = ?</property>
                       cachedName="History"
                       externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[History]"
                       lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[History]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[MicrosoftVSTSCommonStateChangeDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="MicrosoftVSTSCommonStateChangeDate"
+                      externalMetadataColumnId="Package\Data Flow Task Mongo\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StateChangeDate]"
+                      lineageId="Package\Data Flow Task Mongo\ODBC Source.Outputs[ODBC Source Output].Columns[MicrosoftVSTSCommonStateChangeDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -18611,13 +18617,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Data Flow Task Merge\Sort"
-          TopLeft="268.357147333574,148.827733102554" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Data Flow Task Merge\Merge Join"
-          TopLeft="252.244902254889,236.63865759487" />
+          Size="164.8,41.6"
+          Id="Package\Data Flow Task Merge\OLE DB Command"
+          TopLeft="492.030620530465,429.802524562879" />
         <NodeLayout
           Size="157.6,41.6"
           Id="Package\Data Flow Task Merge\ADO NET Source"
@@ -18627,6 +18629,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Data Flow Task Merge\Flat File Source"
           TopLeft="33.3673475070181,57.8991604758798" />
         <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Data Flow Task Merge\Sort 1"
+          TopLeft="482.846946393784,237.3823557725" />
+        <NodeLayout
           Size="154.4,41.6"
           Id="Package\Data Flow Task Merge\Conditional Split"
           TopLeft="237.346942817505,58.6638663689571" />
@@ -18635,13 +18641,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Data Flow Task Merge\Data Conversion"
           TopLeft="453.663272938298,150.575632286732" />
         <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Data Flow Task Merge\OLE DB Command"
-          TopLeft="492.030620530465,429.802524562879" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Data Flow Task Merge\Sort 1"
-          TopLeft="482.846946393784,237.3823557725" />
+          Size="97.6,41.6"
+          Id="Package\Data Flow Task Merge\Sort"
+          TopLeft="268.357147333574,148.827733102554" />
         <NodeLayout
           Size="163.2,41.6"
           Id="Package\Data Flow Task Merge\Conditional Split 1"
@@ -18650,6 +18652,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Size="178.4,41.6"
           Id="Package\Data Flow Task Merge\ADO NET Destination"
           TopLeft="227.12018527373,489.132593227781" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Data Flow Task Merge\Merge Join"
+          TopLeft="252.244902254889,236.63865759487" />
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\Data Flow Task Merge\Data Conversion 1"
@@ -18673,7 +18679,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18695,7 +18703,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18717,7 +18727,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18763,7 +18775,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18809,7 +18823,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18831,7 +18847,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18877,7 +18895,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19057,7 +19077,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     design-time-name="Package\Data Flow Task Script">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Data Flow Task Script\Script Component"
@@ -19097,7 +19117,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
